@@ -10,3 +10,4 @@ async function fetchTransactions(blockNumber) {
     const transactions = block.transactions.map(tx => tx.hash);
     return transactions;
 }
+
