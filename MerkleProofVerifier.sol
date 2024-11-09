@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 contract MerkleProofVerifier is Ownable {
     bytes32 public merkleRoot;
 
-    // Function to set Merkle root, restricted to the contract owner
+    // Function to set Merkle root, restricted to the contract owner 
     function setMerkleRoot(bytes32 _merkleRoot) external onlyOwner {
         merkleRoot = _merkleRoot;
     }
