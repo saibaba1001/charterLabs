@@ -9,7 +9,7 @@ const signer = provider.getSigner();
 const MerkleProofVerifier = new ethers.Contract(contractAddress, MerkleProofVerifierABI, signer);
 
 function App() {
-    const [transactionHash, setTransactionHash] = useState("");
+    const [transactionHash, setTransactionHash] = useState(""); 
     const [proof, setProof] = useState([]);
     const [result, setResult] = useState(null);
 
